@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<GridPane fx:id="gridPane" fx:controller="com.omarkandil.exchange.preferences.Preferences"
+          xmlns:fx="http://javafx.com/fxml"
+          stylesheets="@preferences.css"
+          alignment="center"
+          hgap="10"
+          vgap="20"
+          prefWidth="600.0"
+          prefHeight="475.0"
+          styleClass="root">
+
+    <rowConstraints>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="20" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="20" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="10" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="40" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="10" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="40" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+        <RowConstraints minHeight="10" prefHeight="30" vgrow="SOMETIMES"/>
+    </rowConstraints>
+
+    <Label fx:id="titleLabel" text="User Preferences" styleClass="title" GridPane.columnSpan="2" GridPane.rowIndex="0"/>
+
+    <Label fx:id="sectionHeader1" text="Boundary Settings" styleClass="subtitle" GridPane.columnSpan="2" GridPane.rowIndex="1"/>
+    <Label fx:id="bound1" text="USD to LBP Upper Bound" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="upperBoundUsdToLbp" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label fx:id="bound2" text="USD to LBP Lower Bound" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="lowerBoundUsdToLbp" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label fx:id="bound3" text="LBP to USD Upper Bound" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="upperBoundLbpToUsd" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Label fx:id="bound4" text="LBP to USD Lower Bound" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <TextField fx:id="lowerBoundLbpToUsd" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+    <Label fx:id="sectionHeader3" text="Communication Preferences" styleClass="subtitle" GridPane.columnSpan="2" GridPane.rowIndex="6"/>
+    <CheckBox fx:id="sendEmail" text="Send Email Notifications" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+    <TextField fx:id="email" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    <CheckBox fx:id="sendSms" text="Send SMS Notifications" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+    <TextField fx:id="phoneNumber" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="9" GridPane.columnSpan="2" spacing="20">
+        <CheckBox fx:id="updateBoundsCheckbox" text="Update Bounds"/>
+        <CheckBox fx:id="updateEmailCheckbox" text="Update Email"/>
+        <CheckBox fx:id="updateSmsCheckbox" text="Update SMS"/>
+        <CheckBox fx:id="updateAccessibility" text="Update Voice over"/>
+    </HBox>
+    <Button fx:id="saveButton" text="Save Preferences" onAction="#savePreferences" prefWidth="250" minWidth="20" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+</GridPane>

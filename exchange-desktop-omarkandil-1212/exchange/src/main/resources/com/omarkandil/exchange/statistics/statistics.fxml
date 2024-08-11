@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainContainer"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.omarkandil.exchange.statistics.Statistics"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@statistics.css">
+
+    <top>
+        <VBox alignment="CENTER" spacing="10" >
+            <HBox fx:id="hbox1" alignment="CENTER" spacing="10">
+                <DatePicker fx:id="startDatePicker" promptText="Start Date"/>
+                <DatePicker fx:id="endDatePicker" promptText="End Date"/>
+            </HBox>
+            <HBox fx:id="hbox2" alignment="CENTER" spacing="10">
+                <CheckBox fx:id="checkExtremums" text="Show Extremums"/>
+                <CheckBox fx:id="checkAverages" text="Show Averages"/>
+                <CheckBox fx:id="checkVolumes" text="Show Volume"/>
+                <CheckBox fx:id="checkPercentChanges" text="Show Percent Changes"/>
+            </HBox>
+            <Button fx:id="getData" text="Get Statistics" onAction="#getStatistics"/>
+        </VBox>
+    </top>
+
+    <center>
+        <TableView fx:id="statsTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="statTypeColumn" text="Statistic Type" minWidth="60" prefWidth="250"/>
+                <TableColumn fx:id="valueColumn" text="Value" minWidth="30" prefWidth="250"/>
+                <TableColumn fx:id="dateColumn" text="Date" minWidth="60" prefWidth="250"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

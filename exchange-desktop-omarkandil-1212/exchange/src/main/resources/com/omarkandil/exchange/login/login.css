@@ -1,0 +1,23 @@
+.root {
+    -fx-padding: 20;
+}
+
+.label, .text-field, .button {
+    -fx-min-width: 50px;
+    -fx-pref-width: 200;
+}
+
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.text-field {
+    -fx-padding: 4 4 4 4;
+}
+
+.button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+}

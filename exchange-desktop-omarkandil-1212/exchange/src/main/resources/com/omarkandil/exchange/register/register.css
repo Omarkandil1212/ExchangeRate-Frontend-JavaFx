@@ -1,0 +1,30 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-background-color: #f0f0f0;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2a2e37;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2a2e37;
+}
+
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-min-width: 50px;
+    -fx-padding: 5px;
+}
+
+.button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 15px;
+    -fx-min-width: 50px;
+
+}

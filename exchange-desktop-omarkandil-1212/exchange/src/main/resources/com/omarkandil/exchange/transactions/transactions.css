@@ -1,0 +1,13 @@
+.table-view {
+    -fx-base: #f0f0f0;
+    -fx-control-inner-background: #f0f0f0;
+    -fx-background-color: #e2e2e2;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: #d0d0d0;
+    -fx-padding: 5;
+}
+
+.table-column {
+    -fx-alignment: center-left;
+}
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.omarkandil.exchange.previousTransactions.PreviousTransactions">
+    <center>
+        <TableView fx:id="transactionsTable" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="user1Column" text="Username 1" minWidth="30" prefWidth="120"/>
+                <TableColumn fx:id="user2Column" text="Username 2" minWidth="30" prefWidth="120"/>
+                <TableColumn fx:id="dateColumn" text="Date" minWidth="40" prefWidth="120"/>
+                <TableColumn fx:id="usdAmountColumn" text="USD Amount" minWidth="20" prefWidth="120"/>
+                <TableColumn fx:id="lbpAmountColumn" text="LBP Amount" minWidth="20" prefWidth="120"/>
+                <TableColumn fx:id="transactionTypeColumn" text="Transaction Type" minWidth="30" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainContainer"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.omarkandil.exchange.machineLearning.MachineLearning"
+      stylesheets="@machineLearning.css"
+      alignment="TOP_CENTER"
+      spacing="10"
+      fillWidth="true">
+
+    <Label fx:id="titleLabel" text="Currency Rate Prediction" styleClass="header"/>
+
+    <Label fx:id="disclaimerLabel"
+           text="This prediction model is not necessarily accurate. Use this information at your own risk."
+           wrapText="true"
+           styleClass="small-info"/>
+
+    <Separator fx:id="topSeparator" orientation="HORIZONTAL" styleClass="separator"/>
+
+    <Label fx:id="selectDateLabel" text="Select Date:" styleClass="header"/>
+
+    <DatePicker fx:id="datePicker"
+                styleClass="value"/>
+
+    <Button fx:id="predictButton" text="Predict" onAction="#getPrediction" styleClass="button"/>
+
+    <Separator fx:id="middleSeparator" orientation="HORIZONTAL" styleClass="separator"/>
+
+    <Label fx:id="predictedRateLabelHeader" text="Predicted Rate:" styleClass="header"/>
+
+    <Label fx:id="predictedRateLabel"
+           text="---"
+           styleClass="value"/>
+</VBox>
+

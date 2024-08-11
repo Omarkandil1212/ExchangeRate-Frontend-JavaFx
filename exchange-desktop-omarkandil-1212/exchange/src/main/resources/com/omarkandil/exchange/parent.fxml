@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            fx:id="borderPane" fx:controller="com.omarkandil.exchange.Parent"
+            xmlns:fx="http://javafx.com/fxml" prefHeight="400.0"
+            stylesheets="@parent.css"
+            prefWidth="600.0">
+    <left>
+        <VBox fx:id="navigationPanel" spacing="5" styleClass="nav-container" >
+            <Button styleClass="nav-button" text="Exchange Rate"
+                    onAction="#ratesSelected" minHeight="10"/>
+            <Button fx:id="transactionButton" styleClass="nav-button"
+                    text="Transactions"
+                    onAction="#transactionsSelected" minHeight="10"/>
+            <Button fx:id="loginButton" styleClass="nav-button"
+                    text="Login" onAction="#loginSelected" minHeight="10"/>
+            <Button fx:id="registerButton" styleClass="nav-button"
+                    text="Register" onAction="#registerSelected"/>
+            <Button fx:id="statistics" styleClass="nav-button"
+                    text="Statistics" onAction="#statisticsSelected" minHeight="10"/>
+            <Button fx:id="fluctuations" styleClass="nav-button"
+                    text="Fluctuations" onAction="#fluctuationsSelected" minHeight="10"/>
+            <Button fx:id="userTransactionButton" styleClass="nav-button"
+                    text="Interuser Transactions" onAction="#userTransactionSelected" minHeight="10"/>
+            <Button fx:id="previousTransactionButton" styleClass="nav-button"
+                    text="Previous Transactions" onAction="#previousTransactionSelected" minHeight="10"/>
+            <Button fx:id="preferencesButton" styleClass="nav-button"
+                    text="Preferences" onAction="#preferencesSelected" minHeight="10"/>
+            <Button fx:id="predictionButton" styleClass="nav-button"
+                    text="Predictions" onAction="#machineLearningSelected" minHeight="10"/>
+            <Button fx:id="logoutButton" styleClass="nav-button" text="Logout" onAction="#logoutSelected" minHeight="10"/>
+        </VBox>
+    </left>
+    <center>
+        <fx:include source="rates/rates.fxml"/>
+    </center>
+</BorderPane>

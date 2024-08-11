@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Priority?>
+
+<VBox fx:id="mainContainer" fx:controller="com.omarkandil.exchange.fluctuations.Fluctuations"
+      xmlns:fx="http://javafx.com/fxml" spacing="10" styleClass="container"
+      stylesheets="@fluctuations.css" fillWidth="true">
+    <HBox fx:id="hbox" alignment="CENTER" spacing="10" HBox.hgrow="ALWAYS">
+        <DatePicker fx:id="startDatePicker" promptText="Start Date"/>
+        <DatePicker fx:id="endDatePicker" promptText="End Date"/>
+        <Button fx:id="getData" text="Load Data" onAction="#loadChartData"/>
+    </HBox>
+    <LineChart fx:id="exchangeRateChartUSDtoLBP" title="Exchange Rate Fluctuations (USD to LBP)" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+        <xAxis>
+            <CategoryAxis fx:id ="xAxis1" label="Date"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Rate"/>
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="exchangeRateChartLBPtoUSD" title="Exchange Rate Fluctuations (LBP to USD)" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS">
+        <xAxis>
+            <CategoryAxis fx:id ="xAxis2" label="Date"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis label="Rate"/>
+        </yAxis>
+    </LineChart>
+</VBox>

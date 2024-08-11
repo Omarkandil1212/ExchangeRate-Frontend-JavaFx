@@ -1,0 +1,20 @@
+.table-view {
+    -fx-table-cell-border-color: transparent;
+    -fx-base: #ffffff;
+}
+
+.table-view .column-header {
+    -fx-alignment: center-left;
+    -fx-text-fill: #2e2e2e;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 5px 0px;
+}
+
+.table-row-cell {
+    -fx-padding: 10px 0px;
+    -fx-border-color: lightgray;
+    -fx-border-width: 0 0 1 0;
+    -fx-alignment: center-left;
+}

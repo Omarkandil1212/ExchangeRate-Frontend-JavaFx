@@ -1,0 +1,16 @@
+.nav-container {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 10px;
+    -fx-spacing: 5px;
+}
+
+.nav-button {
+    -fx-background-color: #34495E;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-max-width: infinity;
+}

@@ -1,0 +1,30 @@
+.root {
+    -fx-font-family: 'Arial';
+    -fx-base: #f0f0f0;
+}
+
+.chart {
+    -fx-padding: 10;
+}
+
+.chart-line-symbol {
+    -fx-background-color: #666, white;
+    -fx-background-insets: 0, 2;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px;
+}
+
+.axis-label {
+    -fx-text-fill: #333;
+    -fx-font-size: 12px;
+    -fx-font-weight: normal;
+}
+
+.axis-tick-label {
+    -fx-font-size: 10px;
+}
+.button {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-padding: 10 20;
+}
